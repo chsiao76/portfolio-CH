@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Chris Hsiao</title>
+  <meta name="description" content="Chris Hsiao's portfolio site.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" media="screen" title="no title" charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/master.css" media="screen" title="no title" charset="utf-8">
+  <link rel="shortcut icon" href="img/favicon.ico"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body style="display:none">
+  <div class="wrapper">
+    <header>
+    </header>
+    <section>
+      <div class="nav">
+        <div class="nav-wrap">
+          <ul class="nav-list">
+          </ul>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="content-wrap">
+          <div id="define" class="flex-col">
+            <h1>Hello, I'm Chris --</br>Product Strategist and Full-Stack Developer</h1>
+            <p class="define">Currently, I work in Product Strategy & Operations at Facebook where I help my teams <span class="bold">develop, operationalize, and manage</span> data pipelines
+              in order to create machine learning models and active measurements. I'm also a recent graduate of the Full Stack Developer Bootcamp at Bloc where I fell in love with how truly beautiful
+              and supremely satisfying <span class='bold'> bringing a solution to life</span> through code is. By marrying product knowledge with development skills, my goal is to bring valuable products to life and
+              stand at the intersection of people and technology.</p>
+            <div class="home-links">
+              <button type="button" class="btn-dark">Send</button></a>
+              <button id="projects-button" type="button" class="btn-light">Take a Look</button>
+            </div>
+          </div>
+          <div id="about" class="flex-col">
+            <p class="define">As a kid, I was <span class='bold'>always on the lookout</span> for the newest “thing”. Whether it was showing off that new Transformers toy or exploring interesting hacks
+              (Limewire anyone?) - it was always a ton of fun exploring cool, underrated “micro-solutions”. Today, I hope to begin transitioning from <span class='bold'>curation into creation</span>.
+              As an an amateur fullstack developer and avid product enthusiast, I’m a huge fan of products that are beautiful, exciting, and most importantly, <span class='bold'>solve a real problem</span>.</p>
+            <p class="define">If I'm not thinking about the next big idea, you'll probably find me playing tennis on a nice breezy day or out discovering new artists at a music festival. I'm a lifelong
+              learner and some of my current endeavors include finishing my latest book (“You Are Here” by Thich Nhat Hanh) and building my own PC!</p>
+            <p class="define italic">I’m currently seeking an open <span class='bold'>Product Manager</span> role - feel free to contact me or just drop a note and say “hi”!</p>
+            <ul class="social">
+              <li><a class="social-links" href="https://www.linkedin.com/in/christopherhsiao" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+              <li><a class="social-links" href="https://github.com/chsiao76" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+              <li><a class="social-links" href="mailto:chsiao76@gmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+          <div class="projects-wrap">
+            <div class="projects">
+              <div id="project-1" class="project">
+                <div class="card">
+                  <div class="img-container">
+                    <a href="https://chsiao76.github.io/quiz-app-CH/" target="_blank">
+                      <img class="card-img-top" src="" data-src="img/tennis_quiz.png" alt="tennis_quiz.png">
+                      <span class="view-project-hover">My very first app!</span>
+                    </a>
+                  </div>
+                  <div class="card-block">
+                    <h4 class="card-title">Tennis Quiz</h4>
+                    <div class="project-tech">
+                      <span class="italic">HTML, CSS, Javascript, jQuery</p>
+                    </div>
+                    <p class="card-text">A simple app that lets users take a short quiz on tennis knowledge. The quiz is replayable
+                      and will give users a final score based on their answers</p>
+                    <div class="card-footer">
+                      <div class="project-links">
+                        <a class="card-actions" href="https://github.com/chsiao76/quiz-app-CH" target="_blank">
+                          <button type="button" class="btn-light marg-clear-l">View code</button>
+                        </a>
+                        <a href="https://chsiao76.github.io/quiz-app-CH/" target="_blank">
+                          <button type="button" class="btn-dark">View project</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+    </footer>
+  </div>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script defer src="js/app.js"></script>
+  <script>
+    window.addEventListener('load', function(){
+        var allimages= document.getElementsByTagName('img');
+        for (var i=0; i<allimages.length; i++) {
+            if (allimages[i].getAttribute('data-src')) {
+                allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));
+            }
+        }
+    }, false)
+</script>
+</body>
+
+</html>
