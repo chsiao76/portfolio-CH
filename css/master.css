@@ -172,7 +172,7 @@ footer p {
 }
 
 .nav-wrap {
-  flex: 1;
+  flex: 10;
 }
 
 .content-wrap {
@@ -382,10 +382,6 @@ footer p {
 
 @media screen and (min-width: 800px) {
 
-  .nav {
-    flex: 0 0 25%;
-  }
-
   .nav-list li {
     flex: 1 0 auto;
     align-self: flex-end;
@@ -399,9 +395,6 @@ footer p {
     font-size: 1.4em;
   }
 
-  .nav-list li:not(:last-child) {
-    margin-bottom: 10%;
-  }
 
   .btn-dark, .btn-light {
     font-size: 1.2em;
@@ -412,7 +405,6 @@ footer p {
   .main-content {
     flex: 0 1 100%;
     justify-content: center;
-    border-left: 1px solid black;
   }
 
   .projects-wrap {
